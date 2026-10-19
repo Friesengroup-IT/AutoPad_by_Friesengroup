@@ -1,0 +1,95 @@
+{
+  "name": "AutoPad by Friesengroup",
+  "short_name": "AutoPad",
+  "description": "Pads in Dur, Dur b und Moll, einstellbarer Click mit Stereo-Split und Setlists",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070e17",
+  "theme_color": "#070e17",
+  "id": "de.friesengroup.de",
+  "lang": "de",
+  "dir": "ltr",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "events",
+    "multimedia",
+    "music",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/Live-Pads_Dur.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Live-Pads_Dur-b.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Live-Pads_Moll.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Setlist_empty.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Setlist_AddSong.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Settings_Pads-Click.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Settings_Output-MIDI.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    },
+    {
+      "src": "screenshots/Pad-Sounds_Settings.png",
+      "sizes": "1080x2340",
+      "type": "image/png",
+      "platform": "narrow"
+    }
+  ]
+}
