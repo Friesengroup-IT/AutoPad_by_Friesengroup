@@ -11,7 +11,7 @@
   "id": "de.friesengroup.de",
   "lang": "de",
   "dir": "ltr",
-  "prefer_related_applications": true,
+  "prefer_related_applications": false,
   "display_override": [
     "standalone",
     "window-controls-overlay"
@@ -45,51 +45,51 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/Live-Pads_Dur.jpg",
+      "src": "screenshots/Live-Pads_Dur.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Live-Pads_Dur-b.jpg",
+      "src": "screenshots/Live-Pads_Dur-b.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Live-Pads_Moll.jpg",
+      "src": "screenshots/Live-Pads_Moll.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Setlist_empty.jpg",
+      "src": "screenshots/Setlist_empty.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Setlist_AddSong.jpg",
+      "src": "screenshots/Setlist_AddSong.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Settings_Pads-Click.jpg",
+      "src": "screenshots/Settings_Pads-Click.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Settings_Output-MIDI.jpg",
+      "src": "screenshots/Settings_Output-MIDI.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Pad-Sounds_Settings.jpg",
+      "src": "screenshots/Pad-Sounds_Settings.png",
       "sizes": "1080x2340",
-      "type": "image/jpeg",
+      "type": "image/png",
       "platform": "narrow"
     }
   ]
