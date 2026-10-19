@@ -1,0 +1,39 @@
+AutoPad by Friesengroup - Android / iPhone / iPad (App zum Installieren, ohne App-Store)
+=========================================================================================
+
+Das ist eine "PWA": eine Web-App, die sich wie eine echte App installiert (eigenes Icon,
+Vollbild, laeuft danach auch OFFLINE). Sie muss einmalig von einer https-Adresse geladen werden.
+
+SCHRITT 1 - Den Ordner "mobile" ins Internet stellen (kostenlos, 2 Minuten)
+  Variante A (am einfachsten): https://app.netlify.com/drop
+     -> den ganzen Ordner "mobile" per Drag & Drop auf die Seite ziehen
+     -> du bekommst sofort eine Adresse wie https://xyz.netlify.app
+  Variante B: GitHub Pages (Ordnerinhalt in ein GitHub-Repository hochladen und Pages aktivieren)
+  Variante C: eigener Webspace (Dateien hochladen, Adresse muss https sein)
+
+SCHRITT 2 - Auf dem Geraet installieren
+  Android (Chrome):  Adresse oeffnen -> Menue (⋮) -> "App installieren" bzw. "Zum Startbildschirm hinzufuegen"
+  iPhone/iPad (Safari): Adresse oeffnen -> Teilen-Symbol -> "Zum Home-Bildschirm"
+  PC (Chrome/Edge): Adresse oeffnen -> Installieren-Symbol in der Adressleiste
+
+  Danach einmal online starten, damit alles zwischengespeichert wird. Ab dann geht es auch ohne Netz.
+
+MIDI (Fussschalter / Controller)
+  - Android (Chrome) und PC (Chrome/Edge): funktioniert (USB-Kabel/OTG oder Bluetooth-MIDI).
+    Einstellungen -> "MIDI" -> "Verbinden" -> bei "Naechster Song" auf "Lernen" -> Fussschalter druecken.
+  - iPhone/iPad: Safari unterstuetzt Web MIDI NICHT - dort gibt es MIDI nur mit einer nativen App
+    (siehe unten). Alles andere (Pads, Click, Setlist) funktioniert auf iPhone/iPad.
+
+STEREO-SPLIT (Click links / Pads rechts)
+  Brauchst du Kopfhoerer, ein Audio-Interface mit 2 Kanaelen oder einen Splitter-Adapter.
+  Den Ausgang waehlt das Geraet selbst (Android/iOS), nicht die App.
+
+SETLISTS AUSTAUSCHEN
+  Setlist-Tab -> "Setlist ▾" -> Exportieren / Importieren. Die Dateien sind mit der Windows-Version
+  kompatibel (gleiches Format).
+
+TIPPS FUER DIE BUEHNE
+  - Bildschirm bleibt waehrend der Nutzung an (Wake Lock).
+  - iPhone: Die App versucht, den Stummschalter zu umgehen. Falls es still bleibt: Stummschalter pruefen (nicht auf iOS getestet).
+  - Lokal testen am PC: im Ordner "mobile" ausfuehren:  python -m http.server 8000
+    und im Browser  http://localhost:8000  oeffnen.

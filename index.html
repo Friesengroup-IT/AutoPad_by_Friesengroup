@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#070e17">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AutoPad">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>AutoPad by Friesengroup</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <img src="icons/logo-mark.png" alt="" class="logo">
+    <div class="brand"><div class="name"><span>Auto</span><b>Pad</b></div><small>by Friesengroup</small></div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="live" class="on">LIVE</button>
+    <button data-tab="setlist">SETLIST</button>
+  </nav>
+
+  <main>
+    <!-- LIVE -->
+    <section id="page-live" class="page on">
+      <div id="status" class="status"></div>
+      <div class="seg" id="pageSel"></div>
+      <div id="padGrid" class="padgrid"></div>
+    </section>
+
+    <!-- SETLIST -->
+    <section id="page-setlist" class="page">
+      <div class="status" id="setlistInfo"></div>
+      <div id="songList" class="songlist"></div>
+      <div class="toolbar">
+        <button class="btn" id="btnAddSong">＋ Song</button>
+        <button class="btn" id="btnSetlistMenu">Setlist ▾</button>
+      </div>
+      <div class="toolbar">
+        <button class="btn big" id="btnPrev">⏮</button>
+        <button class="btn big" id="btnNext">⏭ Nächster Song</button>
+      </div>
+    </section>
+
+    <!-- EINSTELLUNGEN -->
+    <section id="page-menu" class="page scroll">
+      <h2>Einstellungen</h2>
+      <h4>Pads</h4>
+      <div class="card">
+        <label class="row"><span>Crossfade</span><input type="range" min="0" max="1" step="0.01" data-cfg="crossfade"></label>
+        <label class="row"><span>Low Pass</span><input type="range" min="0" max="1" step="0.01" data-cfg="lowpass"></label>
+        <label class="row"><span>High Pass</span><input type="range" min="0" max="1" step="0.01" data-cfg="highpass"></label>
+        <label class="row"><span>Reverb</span><input type="range" min="0" max="1" step="0.01" data-cfg="reverb"></label>
+        <label class="row"><span>Volume</span><input type="range" min="0" max="1" step="0.01" data-cfg="pad_volume"></label>
+      </div>
+      <h4>Click</h4>
+      <div class="card">
+        <div class="row"><span>Click aktiv</span><label class="switch"><input type="checkbox" id="clickOn"><i></i></label></div>
+        <div class="row"><span>Sound</span><select id="clickSound"></select></div>
+        <div class="row"><span>Tempo</span>
+          <div class="stepper"><button class="btn sm" id="tap">TAP</button><button class="btn sm" data-step="tempo" data-d="-1">−</button><b id="tempoVal">100</b><button class="btn sm" data-step="tempo" data-d="1">+</button></div></div>
+        <div class="row"><span>Subdivisions</span>
+          <div class="stepper"><button class="btn sm" data-step="subdiv" data-d="-1">−</button><b id="subdivVal">4</b><button class="btn sm" data-step="subdiv" data-d="1">+</button></div></div>
+        <label class="row"><span>Volume</span><input type="range" min="0" max="1" step="0.01" data-cfg="click_volume"></label>
+        <div class="note">Der Click läuft nur, solange ein Pad aktiv ist.</div>
+      </div>
+      <h4>Ausgabe (Stereo-Aufteilung)</h4>
+      <div class="card">
+        <div class="vseg" id="routeSel"></div>
+        <div class="note">Tipp: Für die Trennung brauchst du Kopfhörer oder ein Audio-Interface mit 2 Kanälen (z. B. per USB-C).</div>
+      </div>
+      <h4>MIDI (Fußschalter / Controller)</h4>
+      <div class="card" id="midiCard">
+        <div class="row"><span>MIDI</span><button class="btn sm" id="midiConnect">Verbinden</button></div>
+        <div class="note" id="midiStatus">Noch nicht verbunden.</div>
+        <div class="midirow" data-m="next"><span>Nächster Song</span><code></code><button class="btn sm" data-learn>Lernen</button><button class="btn sm ghost" data-clear>✕</button></div>
+        <div class="midirow" data-m="prev"><span>Voriger Song</span><code></code><button class="btn sm" data-learn>Lernen</button><button class="btn sm ghost" data-clear>✕</button></div>
+        <div class="midirow" data-m="stop"><span>Stopp</span><code></code><button class="btn sm" data-learn>Lernen</button><button class="btn sm ghost" data-clear>✕</button></div>
+        <div class="row"><span>Program Change wählt Song<br><small>PC 0 = Song 1, PC 1 = Song 2 …</small></span><label class="switch"><input type="checkbox" id="pcDirect"><i></i></label></div>
+        <div class="note" id="midiLast">Zuletzt empfangen: –</div>
+      </div>
+      <div style="height:24px"></div>
+    </section>
+
+    <!-- SOUNDS -->
+    <section id="page-sounds" class="page scroll">
+      <div class="row head"><h2>Pad-Sounds</h2><button class="btn sm" id="btnFav">★ Favorit an/aus</button></div>
+      <div id="soundList" class="soundlist"></div>
+    </section>
+  </main>
+
+  <footer id="bottomMain">
+    <button data-nav="menu">⚙<span>Einstellungen</span></button>
+    <button data-nav="stop" class="stop">■<span>Stopp</span></button>
+    <button data-nav="sounds">♪<span>Sounds</span></button>
+  </footer>
+  <footer id="bottomBack" hidden>
+    <button data-nav="back" class="back">⌄<span>Zurück</span></button>
+  </footer>
+
+  <div id="dialog"></div>
+  <div id="toast"></div>
+  <input type="file" id="importFile" accept=".json,application/json" hidden>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
