@@ -11,6 +11,7 @@
   "id": "de.friesengroup.de",
   "lang": "de",
   "dir": "ltr",
+  "prefer_related_applications": true,
   "display_override": [
     "standalone",
     "window-controls-overlay"
@@ -44,51 +45,51 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/Live-Pads_Dur.png",
+      "src": "screenshots/Live-Pads_Dur.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Live-Pads_Dur-b.png",
+      "src": "screenshots/Live-Pads_Dur-b.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Live-Pads_Moll.png",
+      "src": "screenshots/Live-Pads_Moll.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Setlist_empty.png",
+      "src": "screenshots/Setlist_empty.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Setlist_AddSong.png",
+      "src": "screenshots/Setlist_AddSong.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Settings_Pads-Click.png",
+      "src": "screenshots/Settings_Pads-Click.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Settings_Output-MIDI.png",
+      "src": "screenshots/Settings_Output-MIDI.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     },
     {
-      "src": "screenshots/Pad-Sounds_Settings.png",
+      "src": "screenshots/Pad-Sounds_Settings.jpg",
       "sizes": "1080x2340",
-      "type": "image/png",
+      "type": "image/jpg",
       "platform": "narrow"
     }
   ]
