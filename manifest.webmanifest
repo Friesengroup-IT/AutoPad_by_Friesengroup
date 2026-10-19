@@ -47,49 +47,49 @@
     {
       "src": "screenshots/Live-Pads_Dur.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Live-Pads_Dur-b.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Live-Pads_Moll.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Setlist_empty.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Setlist_AddSong.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Settings_Pads-Click.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Settings_Output-MIDI.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     },
     {
       "src": "screenshots/Pad-Sounds_Settings.jpg",
       "sizes": "1080x2340",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "platform": "narrow"
     }
   ]
