@@ -48,49 +48,57 @@
       "src": "screenshots/Live-Pads_Dur.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Live-Pads auf Dur"
     },
     {
       "src": "screenshots/Live-Pads_Dur-b.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Live-Pads auf Dur b"
     },
     {
       "src": "screenshots/Live-Pads_Moll.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Live-Pads auf Moll"
     },
     {
       "src": "screenshots/Setlist_empty.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Leere Setliste"
     },
     {
       "src": "screenshots/Setlist_AddSong.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Pop-Up Song zu Setlist hinzufügen"
     },
     {
       "src": "screenshots/Settings_Pads-Click.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Einstellungen: Teil für Pads und Click"
     },
     {
       "src": "screenshots/Settings_Output-MIDI.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Einstellungen: Teil für Ausgang und MIDI"
     },
     {
       "src": "screenshots/Pad-Sounds_Settings.png",
       "sizes": "1080x2340",
       "type": "image/png",
-      "platform": "narrow"
+      "form_factor": "narrow",
+      "label": "Einstellung für Pad-Sound"
     }
   ]
 }
