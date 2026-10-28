@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "de.friesengroup.tools.autopad.twa",
+        "sha256_cert_fingerprints": ["2C:C2:2D:94:DF:E0:CE:1E:E0:4A:D2:06:B6:19:F8:D8:AA:DC:90:E8:06:2D:3B:AF:8B:8F:BF:B6:11:65:8C:39"]
+      }
+    }]
